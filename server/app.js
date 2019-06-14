@@ -3,7 +3,7 @@ const proxy = require('http-proxy-middleware');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-// Config
+
 const { routes } = require('./config.json');
 
 const app = express();
@@ -15,13 +15,13 @@ for (route of routes) {
   app.use(route.route,
     proxy({
       target: route.address,
-      pathRewrite: (path, req) => {     
-        return path.split('/').slice(2).join('/'); // Could use replace, but take care of the leading '/'
+      pathRewrite: (path, req) => {
+        return path.split('/').slice(2).join('/');
       }
     })
   );
 }
 
-app.listen(3000, () => {
-  console.log('Proxy listening on port 3000');
+app.listen(3030, () => {
+  console.log('Proxy listening on port 3030');
 });
