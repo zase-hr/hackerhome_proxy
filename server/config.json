@@ -1,8 +1,12 @@
 {
   "routes": [
   {
-    "route": "/booking",
-    "address": "http://localhost:3003/booking"
+    "route": "/bookings",
+    "address": "http://localhost:3003/bookings"
+  },
+  {
+    "route": "/rooms",
+    "address": "http://localhost:3003/rooms"
   }
 ]
 }
