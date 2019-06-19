@@ -2,11 +2,11 @@
   "routes": [
   {
     "route": "/bookings",
-    "address": "http://localhost:3003/bookings"
+    "address": "http://ec2-54-213-134-51.us-west-2.compute.amazonaws.com/bookings"
   },
   {
     "route": "/rooms",
-    "address": "http://localhost:3003/rooms"
+    "address": "http://ec2-54-213-134-51.us-west-2.compute.amazonaws.com/rooms"
   }
 ]
 }
